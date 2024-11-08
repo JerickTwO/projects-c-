@@ -1,13 +1,27 @@
-// Array inverso obteniendo valor del
+// encontrar un numero ya definido dentro de un array
 #include <iostream>
 using namespace std;
 int main()
 {
-    int array_numeros[] = {1, 2, 3, 4, 5, 6};
-    int n = sizeof(array_numeros) / sizeof(array_numeros[0]);
+    double numeros[] = {1, 2, 3, 4, 5}, numEcontrar = 21;
+    bool encontrado = false;
 
-    for (int i = n - 1; i >= 0; i--)
+    cout << "buscando...\n";
+    for (double numero : numeros)
     {
-        cout << array_numeros[i] << "\n";
+        if (numero == numEcontrar)
+        {
+            encontrado = true;
+        }
     }
+    if (encontrado)
+    {
+
+        cout << "El número se encontró exitosamente";
+    }
+    else
+    {
+        cout << "Número no encontrado";
+    }
+    return 0;
 }
