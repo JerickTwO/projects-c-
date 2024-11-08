@@ -3,7 +3,7 @@
 using namespace std;
 int main()
 {
-    double numeros[] = {1, 2, 3, 4, 5}, numEcontrar = 21;
+    double numeros[] = {1, 3, 4, 5, 21}, numEcontrar = 21;
     bool encontrado = false;
 
     cout << "buscando...\n";
@@ -12,11 +12,11 @@ int main()
         if (numero == numEcontrar)
         {
             encontrado = true;
+            break;
         }
     }
     if (encontrado)
     {
-
         cout << "El número se encontró exitosamente";
     }
     else
